@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-size: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 header{
     background-color: white;
@@ -54,29 +54,34 @@ header .container nav ul li a :hover{
 .overview-hero{
     border-radius: 5spx;
     background-color: #E2E8F0;
-    height: 200px;
+    height: 250px;
     width: auto;
 }
 .overview-hero-image img {
     width: 250px;
-    height: 60%;
+    height: 70%;
     align-content: left;
     float: left; 
     margin-left: 10px;
     margin-right: auto;
+    padding-top: 20px;
 }
 .overview-hero-text{
    margin-left: 20px;
    margin-right: 20px; 
    display: inline;
+   padding-top: 50px;
+   padding-bottom: 70px;
 }
 .overview-hero-text h2{
     text-align: justify;
+    font-weight: normal;
 }
 
 .overview-hero-text p{
     text-align: justify;
     margin-right: 75px;
+    font-size: 18px;
 }
 .learn-about{
     clear: both;
@@ -120,18 +125,17 @@ header .container nav ul li a :hover{
     font-size: 21px;
 }
 [src="christopherturk.png"]{
-    width: 390px;
-    height: 150px;
-    border-radius: 950px;
-    padding: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     align-items: left;
+    position: relative;
 }
 
 [src="covid 19 testing.jpg"]{
-    width: 170px;
-    height: 155px;
-    border-radius: 200px;
-    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     align-items: left;
     
 }
@@ -139,15 +143,20 @@ header .container nav ul li a :hover{
 article{
     display: flex;
     flex-direction: row;
+    gap:20px;
+    padding-bottom: 50px;
 }
 .article-body{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: justify;
 }
 
 .article-body p{
     float:left;
     text-align: left;
+    padding: 0px;
 }
 
 .article-body h3{
@@ -156,9 +165,18 @@ article{
     padding-right: 150px;
     font-size: 18px;
 }
-
+.article-body a{
+    color: #5A67D8;
+    text-decoration:solid;
+    font-weight: bold;
+    padding: 0px;
+}
 .stories{
     clear: both;
+}
+
+.stories h2{
+    color: #5A67D8;
 }
 
 .testing{
@@ -217,11 +235,18 @@ article{
 .testing h2{
     color: white;
 }
-
+.newsletter{
+    background-color: #48BB78;
+    height: 250px;
+    margin-bottom: 0%;
+}
 .newsletter .container{
     float: center;
     align-items: center;
     align-content: center;
+    padding-top:15px;
+    
+
 }
 
 .newsletter .container h3{
@@ -241,3 +266,34 @@ form{
     gap: 10px;
 }
 
+form .btn{
+    background-color: #5A67D8;
+    width: 150px;
+    height: 45px;
+    border-color: #5A67D8;
+    border-radius: 5px;
+    border-width: 1px;
+    color: white;
+}
+
+form #email{
+    width:320px;
+    height:20px;
+    border-radius: 5px;
+    border-color: #E2E8F0;
+    border-width: 1px;
+    padding: 12px 20px;
+}
+
+footer{
+    background-color: #4A5568;
+    color: white;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 80px;
+    
+}
+footer p{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
